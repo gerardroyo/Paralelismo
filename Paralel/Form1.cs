@@ -25,7 +25,6 @@ namespace Paralel
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
@@ -73,7 +72,6 @@ namespace Paralel
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
@@ -121,7 +119,6 @@ namespace Paralel
             toList();
             sw.Stop();
             timer1.Text = sw.Elapsed.ToString("hh\\:mm\\:ss\\.fff");
-
         }
 
         private void toList()
