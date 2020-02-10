@@ -72,6 +72,35 @@ namespace Paralel
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void toList()
+        {
+            ListViewItem _list = new ListViewItem(dni);
+            _list.SubItems.Add(nombre);
+            _list.SubItems.Add(email);
+
+            listViewUserParalel.Items.Add(_list);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Mostrar(String resultat)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
@@ -120,30 +149,5 @@ namespace Paralel
             sw.Stop();
             timer1.Text = sw.Elapsed.ToString("hh\\:mm\\:ss\\.fff");
         }
-
-        private void toList()
-        {
-            ListViewItem _list = new ListViewItem(dni);
-            _list.SubItems.Add(nombre);
-            _list.SubItems.Add(email);
-
-            listViewUserParalel.Items.Add(_list);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Mostrar(String resultat)
-        {
-            
-        }
-
     }
 }

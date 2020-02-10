@@ -40,7 +40,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer1 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Label();
-            this.btnParalel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNormal
@@ -130,14 +130,15 @@
             this.timer2.TabIndex = 5;
             this.timer2.Text = "00:00:00";
             // 
-            // btnParalel
+            // button1
             // 
-            this.btnParalel.Location = new System.Drawing.Point(582, 18);
-            this.btnParalel.Name = "btnParalel";
-            this.btnParalel.Size = new System.Drawing.Size(75, 23);
-            this.btnParalel.TabIndex = 2;
-            this.btnParalel.Text = "button1";
-            this.btnParalel.UseVisualStyleBackColor = false;
+            this.button1.Location = new System.Drawing.Point(582, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Paralel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -146,7 +147,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1095, 532);
-            this.Controls.Add(this.btnParalel);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.timer2);
             this.Controls.Add(this.timer1);
             this.Controls.Add(this.listViewUserParalel);
@@ -173,7 +174,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Label timer1;
         private System.Windows.Forms.Label timer2;
-        private System.Windows.Forms.Button btnParalel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
