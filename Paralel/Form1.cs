@@ -143,11 +143,11 @@ namespace Paralel
                     }
                 }
                 );
+                toList();
             }
 
-            toList();
             sw.Stop();
-            timer1.Text = sw.Elapsed.ToString("hh\\:mm\\:ss\\.fff");
+            timer2.Text = sw.Elapsed.ToString("hh\\:mm\\:ss\\.fff");
         }
     }
 }
